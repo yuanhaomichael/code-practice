@@ -1,5 +1,6 @@
 #https://leetcode.com/problems/is-graph-bipartite/
-
+# First solution does not pass all test cases
+# Second solution passes all test cases
 class Solution:
     def isBipartite(self, graph: List[List[int]]) -> bool:
         q = [(0, 'a')]
@@ -26,8 +27,23 @@ class Solution:
                         q.append((node,'a'))
 
         return True
-            
-            
+
+     """
+     Second Solution
+     """   
+        
+    def isBipartite(self, graph: List[List[int]]) -> bool:
+        n=len(graph)
+        color=[-1 for i in range(n)]
+        color[0]=0
+        for i in range(n):
+            for neighbour in graph[i]:
+                if color[neighbour]==-1:
+                    #colour not set yet
+                    color[neighbour]= 1-color[i]#opp colour
+                elif color[neighbour]==color[i]:#same color as its neighbour
+                    return False
+        return True
                 
             
             

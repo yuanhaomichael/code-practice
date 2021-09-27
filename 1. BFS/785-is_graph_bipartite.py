@@ -1,6 +1,8 @@
-#https://leetcode.com/problems/is-graph-bipartite/
+# 
+# https://leetcode.com/problems/is-graph-bipartite/
 # First solution does not pass all test cases
 # Second solution passes all test cases
+# https://gist.github.com/BazzalSeed/00c9ac87d891f8d5db32df697893cc57
 class Solution:
     def isBipartite(self, graph: List[List[int]]) -> bool:
         q = [(0, 'a')]

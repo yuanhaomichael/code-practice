@@ -15,6 +15,10 @@ with valid children, then the tree is not complete.
 
 Time: O(n)
 Space: O(n)
+
+Solution 2: no node should come after a null, so basically do a level order
+traversal and check if any node comes after null.
+Use python Deque to use as a queue because pop(0) is itself O(n)
 """
 class Solution:
     def isCompleteTree(self, root) -> bool:

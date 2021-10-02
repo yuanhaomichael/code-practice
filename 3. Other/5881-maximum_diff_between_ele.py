@@ -6,7 +6,6 @@ such that 0 <= i < j < n and nums[i] < nums[j].
 Return the maximum difference. If no such i and j exists, return -1.
 """
 
-
 class Solution:
     def maximumDifference(self, nums: List[int]) -> int:
         # calculate the difference between 0 index and each other index if it's non-negative

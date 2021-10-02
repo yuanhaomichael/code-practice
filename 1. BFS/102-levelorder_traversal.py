@@ -1,6 +1,7 @@
 #https://leetcode.com/problems/binary-tree-level-order-traversal/
 #This is a classic BFS question, storing in a FIFO queue and poping out
 #the queue and store nodes of the next level.
+
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         if root == None:

@@ -6,6 +6,7 @@ For 2 sorted list, we can find the kth smallest by 2 pointers
 for multiple sorted list, we can keep a pointer for each list
 
 
+
 -Look at Seed's solution, solve using a priority queue
 https://gist.github.com/BazzalSeed/ef85b370129f22b60f194b193fa93482
 '''
